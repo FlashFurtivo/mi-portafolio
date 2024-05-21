@@ -4,14 +4,18 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #2E2E2E;
+    background-color: #121212;
     color: #E0E0E0;
     line-height: 1.6;
 }
 
+h1, h2, h3 {
+    font-family: 'Merriweather', serif;
+}
+
 .container {
     width: 90%;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px 0;
 }
@@ -23,6 +27,10 @@ header {
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
@@ -33,10 +41,12 @@ header h1 {
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
@@ -44,25 +54,42 @@ nav ul li a {
     color: #E0E0E0;
     text-decoration: none;
     font-size: 1.1em;
+    padding: 10px;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #39C0ED;
 }
 
 /* Secciones */
+main {
+    padding-top: 80px; /* Compensar el espacio del header fijo */
+}
+
 section {
-    padding: 40px 0;
-    background: #393939;
+    padding: 60px 0;
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+#about {
+    background-color: #2D2D2D;
+}
+
+#projects {
+    background-color: #333333;
+}
+
+#contact {
+    background-color: #2D2D2D;
+}
+
 section h2 {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 2em;
+    font-size: 2.5em;
     color: #F5A623;
 }
 
@@ -73,7 +100,7 @@ section h2 {
 .project h3 {
     margin: 0;
     font-size: 1.5em;
-    color: #F5A623;
+    color: #39C0ED;
 }
 
 .project p {
@@ -85,6 +112,8 @@ section h2 {
 form {
     display: flex;
     flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 form label {
@@ -99,7 +128,7 @@ form input, form textarea {
     border: none;
     border-radius: 10px;
     box-shadow: inset 3px 3px 6px #1C1C1C, inset -3px -3px 6px #484848;
-    background: #393939;
+    background: #3E3E3E;
     color: #E0E0E0;
 }
 
@@ -110,18 +139,19 @@ form input:focus, form textarea:focus {
 
 form button {
     margin-top: 20px;
-    padding: 10px;
+    padding: 15px;
     font-size: 1.1em;
-    background-color: #F5A623;
+    background-color: #39C0ED;
     color: #fff;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 3px 3px 6px #1C1C1C, -3px -3px 6px #484848;
+    transition: background-color 0.3s ease;
 }
 
 form button:hover {
-    background-color: #E0941C;
+    background-color: #2BA8CE;
 }
 
 /* Footer */
@@ -148,8 +178,9 @@ footer p {
     margin: 0 10px;
     text-decoration: none;
     font-size: 1.5em;
+    transition: color 0.3s ease;
 }
 
 .social a:hover {
-    color: #F5A623;
+    color: #39C0ED;
 }
