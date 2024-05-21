@@ -126,3 +126,17 @@ footer p {
     margin: 0;
     font-size: 1em;
 }
+.social {
+    margin-top: 10px;
+}
+
+.social a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.social a:hover {
+    color: #007BFF;
+}
