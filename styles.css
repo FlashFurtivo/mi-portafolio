@@ -41,9 +41,9 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #d1d1d1;
+    background-color: #ff0000; /* Color rojo tipo Leica */
     box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
-    color: #ff0000; /* Color rojo tipo Leica */
+    color: #ffffff; /* Color del texto blanco al hacer hover */
 }
 
 main {
